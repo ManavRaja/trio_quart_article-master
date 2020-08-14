@@ -1,1 +1,1 @@
-web: hypercorn chat:app
+web: hypercorn chat:app --bind '0.0.0.0:5000'
