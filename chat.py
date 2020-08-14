@@ -1,5 +1,5 @@
 import json
-
+import os
 import trio
 from quart import render_template, websocket
 from quart_trio import QuartTrio
@@ -39,4 +39,5 @@ async def heartbeat():
 
 
 if __name__ == "__main__":
-    app.run(port=80)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(port=port)
