@@ -1,1 +1,1 @@
-web: gunicorn chat:app
+web: uvicorn chat:app
