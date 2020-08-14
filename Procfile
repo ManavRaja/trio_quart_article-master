@@ -1,1 +1,1 @@
-web: hypercorn -k trio chat:app --bind '0.0.0.0:5000'
+web: hypercorn -k trio chat:app --bind '0.0.0.0:$PORT'
